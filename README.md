@@ -33,7 +33,6 @@ This project is an e-commerce website developed for the final year project. It i
    NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your_stripe_public_key
    SANITY_PROJECT_ID=your_sanity_project_id
    SANITY_DATASET=your_sanity_dataset
-
 ## Start the Development Server
 
 To run the development server and launch the application, follow these steps:
