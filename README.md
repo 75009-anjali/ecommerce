@@ -88,7 +88,7 @@ Contributions to this project are welcome! If you would like to contribute, plea
 2. Clone the forked repository to your local machine. You can use the following command in your terminal:
 
    ```shell
-   git clone https://github.com/your-username/ecommerce-project.git
+   git clone https://github.com/75009-anjali/ecommerce
 
 ## License
    - This project is licensed under the MIT License.
@@ -113,14 +113,14 @@ If you find any of these technologies or resources helpful, consider checking ou
 For any inquiries or questions related to this project, please feel free to reach out:
 
 - Your Name: Your Name
-- Email: your-email@example.com
+- Email: your-anjalirathod222001@gmail.com
 
 We welcome any feedback, suggestions, or collaboration opportunities. Don't hesitate to contact us if you have any questions or need further assistance.
 
 You can reach us via email or through the following communication channels:
 
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile/)
-- Twitter: [@YourTwitterHandle](https://twitter.com/your-twitter-handle)
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/anjali-rathod-b85239233/)
+<!-- - Twitter: [@YourTwitterHandle](https://twitter.com/your-twitter-handle) -->
 
 We look forward to hearing from you and appreciate your interest in our project!
 
