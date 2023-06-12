@@ -100,7 +100,7 @@ We would like to acknowledge the following technologies and resources that have 
 - [Next.js](https://nextjs.org/): A React framework for building server-side rendered and static websites.
 - [Stripe](https://stripe.com/): A payment gateway for accepting online payments securely.
 - [Sanity](https://www.sanity.io/): A headless CMS for managing content and product data.
-- Any additional libraries, packages, or resources used in this project (mention them here).
+<!-- - Any additional libraries, packages, or resources used in this project (mention them here). -->
 
 We express our gratitude to the creators and maintainers of these technologies for their contributions to the open-source community.
 
@@ -112,7 +112,7 @@ If you find any of these technologies or resources helpful, consider checking ou
 
 For any inquiries or questions related to this project, please feel free to reach out:
 
-- Your Name: Your Name
+- Your Name: Anjali Subhash Rathod
 - Email: your-anjalirathod222001@gmail.com
 
 We welcome any feedback, suggestions, or collaboration opportunities. Don't hesitate to contact us if you have any questions or need further assistance.
