@@ -1,3 +1,5 @@
 import product from './product';
 import banner from './banner';
-export const schemaTypes = [product,banner]
+import men from './men';
+import women from './women';
+export const schemaTypes = [product,banner,men,women]
