@@ -13,7 +13,9 @@
     "@sanity/client": "^3.2.0",
     "@sanity/image-url": "^1.0.1",
     "@stripe/stripe-js": "^1.25.0",
+    "algoliasearch": "^4.17.2",
     "canvas-confetti": "^1.5.1",
+    "mdb-react-ui-kit": "^6.1.0",
     "next": "12.1.0",
     "next-sanity-image": "^3.2.1",
     "nodemon": "^2.0.22",
@@ -21,6 +23,8 @@
     "react-dom": "17.0.2",
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.3.1",
+    "react-instantsearch-dom": "^6.40.0",
+    "react-router-dom": "^6.12.1",
     "stripe": "^8.209.0"
   },
   "devDependencies": {
