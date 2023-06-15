@@ -13,9 +13,29 @@ const Navbar = () => {
         <Link href="/">CARA</Link>
       </p>
       <div>
-      <Link href={'/components/profile'}>Profile</Link>
+      <Link href={'/components/profile'}><p>PROFILE</p></Link>
+      
       </div>
-    
+      <Link href={`/components/men`}>
+        <div className="" type="button">
+          <p>CLOTHING</p>
+        </div>
+      </Link>
+      <Link href={`/components/womenproduct`}>
+        <div className="" type="button">
+          <p>PRODUCTS</p>
+        </div>
+      </Link>
+      <Link href={`/components/saree`}>
+        <div className="" type="button">
+          <p>MEDICINE</p>
+        </div>
+      </Link>
+      <Link href={`/components/books`}>
+        <div className="" type="button">
+          <p>BOOKS</p>
+        </div>
+      </Link>
 
       
 

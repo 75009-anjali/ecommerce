@@ -82,15 +82,62 @@ const ProductDetails = ({ product, products }) => {
 }
 
 export const getStaticPaths = async () => {
-  const query = `*[_type == "product"] {
+
+  
+  var query;
+   query = `*[_type == "product"] {
     slug {
       current
     }
   }
   `;
-
-  const products = await client.fetch(query);
-
+  var products;
+   products = await client.fetch(query);
+   if (products == null) {
+    query = `*[_type == "women"] {
+      slug {
+        current
+      }
+    }
+    `;
+    products = await client.fetch(query);
+   }
+   else if (products == null) {
+    query = `*[_type == "tops"] {
+      slug {
+        current
+      }
+    }
+    `;
+    products = await client.fetch(query);
+   }
+   else if (products == null) {
+    query = `*[_type == "medicine"] {
+      slug {
+        current
+      }
+    }
+    `;
+    products = await client.fetch(query);
+   }
+   else if (products == null) {
+    query = `*[_type == "men"] {
+      slug {
+        current
+      }
+    }
+    `;
+    products = await client.fetch(query);
+   }
+   else if (products == null) {
+    query = `*[_type == "books"] {
+      slug {
+        current
+      }
+    }
+    `;
+    products = await client.fetch(query);
+   }
   const paths = products.map((product) => ({
     params: { 
       slug: product.slug.current
@@ -102,19 +149,34 @@ export const getStaticPaths = async () => {
     fallback: 'blocking'
   }
 }
-
 export const getStaticProps = async ({ params: { slug }}) => {
-  const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
-  const productsQuery = '*[_type == "product"]'
-  
-  const product = await client.fetch(query);
-  const products = await client.fetch(productsQuery);
+  let query;
+  let productsQuery;
+  let product;
+  let products;
+
+  // Define an array of product types to iterate over
+  const productTypes = ["product", "medicine", "tops", "women","men","books"];
+
+  // Iterate over each product type until a matching product is found
+  for (const type of productTypes) {
+    query = `*[_type == "${type}" && slug.current == '${slug}'][0]`;
+    productsQuery = `*[_type == "${type}"]`;
+    product = await client.fetch(query);
+    products = await client.fetch(productsQuery);
+
+    if (product !== null) {
+      // Break the loop if a product is found
+      break;
+    }
+  }
 
   console.log(product);
 
   return {
     props: { products, product }
-  }
+  };
 }
+
 
 export default ProductDetails

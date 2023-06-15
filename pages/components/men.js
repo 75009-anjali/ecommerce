@@ -7,9 +7,9 @@ const Home = ({ products, bannerData }) => (
   <div>
     <div className="products-heading">
       <Link href="/api/hello">
-        <h2>Best Seller Products</h2>
+        <h2>Fresh Women Clothing</h2>
       </Link>
-      <p>speaker There are many variations passages</p>
+      <p>Be Bold, Be Beautiful</p>
     </div>
 
     <div className="products-container">
@@ -25,6 +25,7 @@ const Home = ({ products, bannerData }) => (
 export const getServerSideProps = async () => {
   const query = '*[_type == "women"]';
   const products = await client.fetch(query);
+  const type = 'women';
 
   const bannerQuery = '*[_type == "banner"]';
   const bannerData = await client.fetch(bannerQuery);

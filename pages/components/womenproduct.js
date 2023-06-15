@@ -1,20 +1,15 @@
 import React from "react";
-
-import { client } from "../lib/client";
-import { Product, FooterBanner, HeroBanner } from "./components";
+import { client } from "../../lib/client";
+import { Product, FooterBanner, HeroBanner } from "../components";
 import Link from "next/link";
 
 const Home = ({ products, bannerData }) => (
   <div>
-    <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-    <div>
-      
-    </div>
     <div className="products-heading">
       <Link href="/api/hello">
-        <h2>Best Seller Products</h2>
+        <h2>Best Women Products</h2>
       </Link>
-      <p>Embrace Your Style, Empower Your Confidence</p>
+      <p>Empowering Women through Fashion</p>
     </div>
 
     <div className="products-container">
@@ -28,8 +23,9 @@ const Home = ({ products, bannerData }) => (
 );
 
 export const getServerSideProps = async () => {
-  const query = '*[_type == "product"]';
+  const query = '*[_type == "men"]';
   const products = await client.fetch(query);
+  
 
   const bannerQuery = '*[_type == "banner"]';
   const bannerData = await client.fetch(bannerQuery);
