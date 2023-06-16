@@ -8,13 +8,19 @@ export default async function handler(req, res) {
       const params = {
         submit_type: 'pay',
         mode: 'payment',
+        phone_number_collection: {
+          enabled: true,
+        },
+        invoice_creation: {
+          enabled: true,
+        },
         payment_method_types: ['card'],
         shipping_address_collection: {
           allowed_countries: ['IN'],
         },
         shipping_options: [
-          { shipping_rate: 'shr_1NHmNzSIm8hWpyuPOL7S32PE' },
-          { shipping_rate: 'shr_1NHmPMSIm8hWpyuPFaJfgsc5' },
+          // { shipping_rate: 'shr_1NHmNzSIm8hWpyuPOL7S32PE' },
+          // { shipping_rate: 'shr_1NHmPMSIm8hWpyuPFaJfgsc5' },
         ],
         line_items: req.body.map((item) => {
           const img = item.image[0].asset._ref;
